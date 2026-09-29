@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduGenie — AI Learning Assistant</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to EduGenie 🧞✨</h1>
+    <p class="subtitle">Your personal AI tutor for learning support!</p>
+
+    <!-- Q&A -->
+    <div class="card">
+      <form id="qaForm">
+        <label><strong>Ask EduGenie a Question:</strong></label><br />
+        <div class="input-row">
+          <input type="text" id="question" placeholder="Why is the sky blue?" required />
+          <button type="submit">Get Answer</button>
+        </div>
+      </form>
+      <div id="qaResult" class="output"></div>
+    </div>
+
+    <!-- Explanation -->
+    <div class="card">
+      <form id="explainForm">
+        <label><strong>Need an Explanation?</strong></label><br />
+        <div class="input-row">
+          <input type="text" id="topic" placeholder="Photosynthesis" required />
+          <button type="submit">Explain</button>
+        </div>
+      </form>
+      <div id="explanationResult" class="output"></div>
+    </div>
+
+    <!-- Summary -->
+    <div class="card">
+      <form id="summaryForm">
+        <label><strong>Summarize a Paragraph:</strong></label><br />
+        <div class="input-row">
+          <input type="text" id="summaryText" placeholder="Paste long content to summarize" required />
+          <button type="submit">Summarize</button>
+        </div>
+      </form>
+      <div id="summaryResult" class="output"></div>
+    </div>
+
+    <!-- Quiz -->
+    <div class="card">
+      <form id="quizForm">
+        <label><strong>Generate a Quiz:</strong></label><br />
+        <div class="input-row">
+          <input type="text" id="quizText" placeholder="Solar System" required />
+          <button type="submit">Generate Quiz</button>
+        </div>
+      </form>
+      <div id="quizResult" class="output"></div>
+    </div>
+
+    <!-- Learning Path -->
+    <div class="card">
+      <form id="learnForm">
+        <label><strong>Get Learning Recommendations:</strong></label><br />
+        <div class="input-row">
+          <input type="text" id="learnTopic" placeholder="e.g. Linear Regression" required />
+          <button type="submit">Get Recommendations</button>
+        </div>
+      </form>
+      <div id="learnResult" class="output"></div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
